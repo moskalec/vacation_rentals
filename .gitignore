@@ -1,0 +1,6 @@
+.idea
+/database/
+.coverage
+/htmlcov/
+.DS_Store
+/venv/
