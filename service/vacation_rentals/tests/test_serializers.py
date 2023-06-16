@@ -37,4 +37,5 @@ class RentalPropertySerializerTestCase(TestCase):
                 "availability": 5,
             },
         ]
+        self.assertEqual(str(rental_property_1), rental_property_1.name)
         self.assertEquals(expected_data, data)

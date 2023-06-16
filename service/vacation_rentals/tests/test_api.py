@@ -236,3 +236,12 @@ class RentalPropertyApiTestCase(APITestCase):
         ).data
         self.assertEquals(status.HTTP_200_OK, response.status_code)
         self.assertEquals(serializer_data, response.data)
+
+        response = self.client.get(
+            url, data={"check_in": "2023-06-15", "check_out": "2023-06-05"}
+        )
+        serializer_data = RentalPropertySerializer(
+            [self.rental_property_1, self.rental_property_2], many=True
+        ).data
+        self.assertEquals(status.HTTP_200_OK, response.status_code)
+        self.assertEquals(serializer_data, response.data)
