@@ -23,4 +23,4 @@ or use coverage
 
 ```docker-compose run --rm web-app sh -c "coverage html"```
 
-[html report](http://localhost:63342/vacation_rentals/service/htmlcov/index.html)
+Open report in browseer .../vacation_rentals/service/htmlcov/index.html
