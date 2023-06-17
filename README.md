@@ -12,6 +12,12 @@ Run build
 Wait for launch...
 
 Open in browser - [http://localhost:8000/rentals/filter/](http://localhost:8000/rentals/filter/), [swagger](http://localhost:8000/swagger/), [swagger.json](http://localhost:8000/swagger.json), [swagger.yaml](http://localhost:8000/swagger.yaml), [redoc](http://localhost:8000/redoc/)
+
+Admin panel - [admin](http://localhost:8000/admin/login/?next=/admin/)
+
+```login: nice```
+
+```password: nice```
 ## Run tests
 ```docker-compose run --rm web-app sh -c "python manage.py test vacation_rentals/tests"```
 
